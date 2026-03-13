@@ -1,2 +1,10 @@
-# xufentu-creator.github.io
-Research homepage of Xufen Tu, independent interdisciplinary researcher in Complex Systems and AI Governance. Foundational work on Human Judgment as a structural constraint in AI-mediated systems and Decision Architecture for Enterprise Transformation.
+# Xufen Tu — Research Homepage
+
+Xufen Tu is an independent interdisciplinary researcher working on Complex Systems, AI Governance, Decision Architecture, Enterprise Transformation, and Human Judgment.
+
+This repository hosts the personal research homepage of Xufen Tu.
+
+For the primary research repository and core framework, see:
+https://github.com/xufentu-creator/judgment-as-structural-constraint
+
+Author: Xufen Tu
