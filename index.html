@@ -1,469 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<title>Xufen Tu | Research</title>
+  <meta charset="UTF-8">
+  <title>Xufen Tu | Official Research Homepage</title>
 
-<meta name="description" content="Research homepage of Xufen Tu, independent interdisciplinary researcher focusing on Complex Systems, AI Governance, Decision Architecture, Human Judgment and Enterprise Transformation.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Xufen Tu">
-<meta name="robots" content="index, follow">
-<meta name="keywords" content="Complex Systems, AI Governance, Human Judgment, Decision Architecture, Enterprise Transformation, Xufen Tu">
+  <meta name="description" content="Official research homepage of Xufen Tu, independent interdisciplinary researcher focusing on Complex Systems, AI Governance, Decision Architecture, Human Judgment, and Enterprise Transformation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Xufen Tu">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Xufen Tu, Complex Systems, AI Governance, Human Judgment, Decision Architecture, Enterprise Transformation">
 
-<meta property="og:title" content="Xufen Tu | Research">
-<meta property="og:description" content="Research homepage of Xufen Tu">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://xufentu-creator.github.io/xufen-tu-profile.png">
+  <meta property="og:title" content="Xufen Tu | Official Research Homepage">
+  <meta property="og:description" content="Independent interdisciplinary researcher focusing on Complex Systems, AI Governance, Decision Architecture, Human Judgment, and Enterprise Transformation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://xufentu-creator.github.io/xufen-tu-profile.png">
 
-<link rel="canonical" href="https://xufentu-creator.github.io/">
+  <link rel="canonical" href="https://xufentu-creator.github.io/">
 
-<style>
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-  line-height: 1.7;
-  color: #222;
-}
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#172033;
+      --muted:#5c667a;
+      --line:#dfe5ef;
+      --accent:#1f4fa3;
+      --accent-soft:#edf3ff;
+      --shadow:0 14px 40px rgba(20, 35, 70, 0.08);
+      --radius:20px;
+      --max:1120px;
+    }
 
-h1{
-  font-size: 36px;
-  margin-bottom: 10px;
-}
+    *{
+      box-sizing:border-box;
+    }
 
-h2{
-  margin-top: 40px;
-  margin-bottom: 12px;
-}
+    html{
+      scroll-behavior:smooth;
+    }
 
-h3{
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
+    body{
+      margin:0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+      color:var(--text);
+      line-height:1.75;
+    }
 
-a{
-  color: #2a5db0;
-  text-decoration: none;
-}
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
 
-a:hover{
-  text-decoration: underline;
-}
+    a:hover{
+      text-decoration:underline;
+    }
 
-.hero{
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
+    .container{
+      width:min(var(--max), calc(100% - 40px));
+      margin:0 auto;
+    }
 
-.hero img{
-  width: 220px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
+    .topbar{
+      padding:24px 0 10px;
+      font-size:14px;
+      color:var(--muted);
+    }
 
-.framework-image{
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+    .topbar-inner{
+      display:flex;
+      justify-content:flex-end;
+      gap:18px;
+      flex-wrap:wrap;
+    }
 
-.framework-image img{
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
+    .topbar a{
+      color:var(--muted);
+    }
 
-pre{
-  background: #f7f7f7;
-  padding: 16px;
-  border-radius: 8px;
-  overflow: auto;
-  line-height: 1.6;
-}
-</style>
+    .hero{
+      padding:40px 0 24px;
+    }
+
+    .hero-card{
+      background:var(--card);
+      border:1px solid rgba(223,229,239,0.85);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      padding:52px;
+      display:grid;
+      grid-template-columns: 250px 1fr;
+      gap:42px;
+      align-items:center;
+    }
+
+    .hero-image img{
+      width:100%;
+      display:block;
+      border-radius:18px;
+      object-fit:cover;
+      border:1px solid var(--line);
+    }
+
+    .eyebrow{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      background:var(--accent-soft);
+      color:var(--accent);
+      font-size:13px;
+      letter-spacing:0.2px;
+      margin-bottom:18px;
+    }
+
+    h1{
+      font-size:48px;
+      line-height:1.15;
+      margin:0 0 14px;
+      letter-spacing:-0.02em;
+    }
+
+    .subtitle{
+      font-size:20px;
+      color:var(--muted);
+      margin:0 0 20px;
+    }
+
+    .intro{
+      max-width:760px;
+      font-size:17px;
+      color:#2a3347;
+      margin-bottom:28px;
+    }
+
+    .keywords{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:18px 0 28px;
+      padding:0;
+      list-style:none;
+    }
+
+    .keywords li{
+      padding:8px 14px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+      color:#344054;
+      font-size:14px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:6px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:13px 18px;
+      border-radius:12px;
+      font-size:15px;
+      font-weight:600;
+      border:1px solid var(--line);
+      transition:all .2s ease;
+    }
+
+    .btn-primary{
+      background:var(--accent);
+      color:#fff;
+      border-color:var(--accent);
+    }
+
+    .btn-primary:hover{
+      text-decoration:none;
+      opacity:0.95;
+    }
+
+    .btn-secondary{
+      background:#fff;
+      color:var(--text);
+    }
+
+    .btn-secondary:hover{
+      text-decoration:none;
+      background:#f8fbff;
+    }
+
+    .section{
+      padding:22px 0;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:22px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid rgba(223,229,239,0.85);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:0 8px 24px rgba(20,35,70,0.04);
+    }
+
+    .card h2{
+      font-size:22px;
+      margin:0 0 14px;
+      line-height:1.3;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .section-title{
+      font-size:30px;
+      margin:8px 0 20px;
+      letter-spacing:-0.02em;
+    }
+
+    .section-intro{
+      color:var(--muted);
+      max-width:760px;
+      margin:0 0 24px;
+      font-size:16px;
+    }
+
+    .publication-list{
+      display:grid;
+      gap:16px;
+    }
+
+    .publication-item{
+      background:var(--card);
+      border:1px solid rgba(223,229,239,0.85);
+      border-radius:18px;
+      padding:22px 24px;
+      box-shadow:0 8px 24px rgba(20,35,70,0.04);
+    }
+
+    .publication-item strong{
+      display:block;
+      margin-bottom:6px;
+      font-size:17px;
+      color:var(--text);
+    }
+
+    .publication-item span{
+      display:block;
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:8px;
+    }
+
+    .split{
+      display:grid;
+      grid-template-columns:1.2fr 0.8fr;
+      gap:22px;
+    }
+
+    .contact-block p{
+      margin:0 0 10px;
+      color:var(--muted);
+    }
+
+    footer{
+      padding:28px 0 48px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .footer-card{
+      background:rgba(255,255,255,0.7);
+      border:1px solid rgba(223,229,239,0.85);
+      border-radius:18px;
+      padding:24px;
+    }
+
+    @media (max-width: 980px){
+      .hero-card{
+        grid-template-columns:1fr;
+        padding:36px;
+      }
+
+      .hero-image{
+        max-width:240px;
+      }
+
+      .grid,
+      .split{
+        grid-template-columns:1fr;
+      }
+
+      h1{
+        font-size:38px;
+      }
+    }
+
+    @media (max-width: 640px){
+      .container{
+        width:min(var(--max), calc(100% - 24px));
+      }
+
+      .hero{
+        padding-top:20px;
+      }
+
+      .hero-card{
+        padding:24px;
+        border-radius:22px;
+      }
+
+      h1{
+        font-size:32px;
+      }
+
+      .subtitle{
+        font-size:18px;
+      }
+
+      .section-title{
+        font-size:26px;
+      }
+
+      .topbar-inner{
+        justify-content:flex-start;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<p style="text-align:right; margin-bottom:20px;">
-<a href="person.html">Author Profile</a> |
-<a href="about-cn.html">中文页面</a>
-</p>
-
-<div class="hero">
-  <img src="xufen-tu-profile.png" alt="Portrait of Xufen Tu">
-
-  <div>
-    <h1>Xufen Tu</h1>
-
-    <p><strong>Official research homepage of Xufen Tu.</strong></p>
-
-    <p>
-    Independent Interdisciplinary Researcher<br>
-    Complex Systems · AI Governance · Decision Architecture · Human Judgment · Enterprise Transformation
-    </p>
-
-    <p>
-    <strong>Canonical Research Repository</strong><br>
-    <a href="https://github.com/xufentu-creator/judgment-as-structural-constraint" target="_blank">
-    https://github.com/xufentu-creator/judgment-as-structural-constraint
-    </a>
-    </p>
-
-    <p>
-    <strong>DOI Archive</strong><br>
-    <a href="https://doi.org/10.5281/zenodo.18571480" target="_blank">
-    https://doi.org/10.5281/zenodo.18571480
-    </a>
-    </p>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a href="person.html">Author Profile</a>
+      <a href="about-cn.html">中文页面</a>
+    </div>
   </div>
-</div>
 
-<hr>
-
-<h2>Research Overview</h2>
-
-<p>
-Xufen Tu is an independent interdisciplinary researcher focusing on human judgment, complex systems, and AI governance.
-</p>
-
-<p>
-Her research examines how human judgment functions as a structural constraint in AI-mediated and highly automated environments. As algorithmic systems scale and replication increases, responsibility boundaries and decision clarity may gradually weaken.
-</p>
-
-<p>
-Through conceptual modeling and interdisciplinary analysis, her work explores how decision structures, responsibility nodes, and governance mechanisms can maintain stability in complex technological systems.
-</p>
-
-<p>
-Her research contributes to the broader discussion on the role of human judgment and responsibility in increasingly automated societies.
-</p>
-
-<section>
-  <p>
-  Xufen Tu is an independent interdisciplinary researcher developing a new structural rule framework for human judgment, decision architecture, and governance stability in AI-mediated complex systems. Her work does not seek minor adjustments within existing technical language, but instead redefines the foundational relationship between judgment, responsibility, and system stability in the age of high replication.
-  </p>
-
-  <p>
-  This is not a detachable single-point idea that can be separated and copied in isolation, but an original framework built through sustained research, structural constraint design, and long-term versioned development.
-  </p>
-
-  <h3>Author Identity</h3>
-
-  <p>
-  ORCID<br>
-  <a href="https://orcid.org/0009-0007-5265-964X" target="_blank">
-  https://orcid.org/0009-0007-5265-964X
-  </a>
-  </p>
-
-  <p>
-  Google Scholar<br>
-  <a href="https://scholar.google.com/citations?user=NseOI0QAAAAJ" target="_blank">
-  https://scholar.google.com/citations?user=NseOI0QAAAAJ
-  </a>
-  </p>
-</section>
-
-<h2>Research Focus</h2>
-
-<p>
-Current research focuses on the structural role of human judgment in complex technological environments.
-</p>
-
-<ul>
-  <li><strong>Complex Systems</strong><br>
-  System stability and structural constraints in high-complexity environments.</li>
-
-  <li><strong>AI Governance</strong><br>
-  Governance structures and responsibility boundaries in AI-mediated systems.</li>
-
-  <li><strong>Decision Architecture</strong><br>
-  Structural design of decision processes in automated environments.</li>
-
-  <li><strong>Human Judgment</strong><br>
-  The irreducible role of human judgment within technological systems.</li>
-
-  <li><strong>Enterprise Transformation</strong><br>
-  Decision-structure evolution in organizations undergoing AI integration.</li>
-</ul>
-
-<h2>Conceptual Contributions</h2>
-
-<p>The following conceptual frameworks are proposed and developed through Xufen Tu’s independent interdisciplinary research.</p>
-
-<h3>Judgment Before Momentum</h3>
-
-<p>
-Human judgment should precede large-scale system execution momentum.
-When automated systems scale faster than human evaluation capacity, structural risks may emerge.
-</p>
-
-<h3>Human Judgment as an Irreducible Interface</h3>
-
-<p>
-Human judgment functions as an irreducible interface between technological execution and social responsibility.
-</p>
-
-<p>
-This interface preserves interpretability, accountability, and ethical boundaries in complex systems.
-</p>
-
-<h3>Responsibility Node</h3>
-
-<p>
-Complex automated systems require identifiable human responsibility points.
-</p>
-
-<p>
-These nodes maintain accountability and governance integrity in distributed technological infrastructures.
-</p>
-
-<h3>Responsibility Drift</h3>
-
-<p>
-Responsibility Drift describes how accountability becomes diffused across layers of automation and distributed decision systems.
-</p>
-
-<p>
-Understanding this phenomenon is essential for future AI governance.
-</p>
-
-<h2>Framework Map</h2>
-
-<p>The conceptual structure of the research can be summarized as follows:</p>
-
-<p>
-Human Judgment<br>
-↓<br>
-Irreducible Interface<br>
-↓<br>
-Judgment Before Momentum<br>
-↓<br>
-Responsibility Node<br>
-↓<br>
-Responsibility Drift
-</p>
-
-<p>
-This framework examines how human judgment acts as a structural stabilizer within complex technological systems.
-</p>
-
-<div class="framework-image">
-  <img src="human-judgment-framework.png" alt="Research framework diagram showing Human Judgment, Irreducible Interface, Judgment Before Momentum, Responsibility Node, and Responsibility Drift">
-</div>
-
-<pre>
-Human Judgment
-      ↓
-Irreducible Interface
-      ↓
-Judgment Before Momentum
-      ↓
-Responsibility Node
-      ↓
-Responsibility Drift
-</pre>
-
-<h2>Publications</h2>
-
-<p>
-Tu, X. (2026).<br>
-<strong>Judgment Before Momentum (v1.0.2)</strong><br>
-Zenodo<br>
-<a href="https://doi.org/10.5281/zenodo.18571480" target="_blank">https://doi.org/10.5281/zenodo.18571480</a>
-</p>
-
-<p>
-Tu, X. (2026).<br>
-<strong>Human Judgment as an Irreducible Interface in High-Complexity Systems (v1.0)</strong><br>
-Zenodo<br>
-<a href="https://doi.org/10.5281/zenodo.18573944" target="_blank">https://doi.org/10.5281/zenodo.18573944</a>
-</p>
-
-<p>
-Tu, X. (2026).<br>
-<strong>Human Responsibility Node in High-Replication Systems (v1.0)</strong><br>
-Zenodo<br>
-<a href="https://doi.org/10.5281/zenodo.18865829" target="_blank">https://doi.org/10.5281/zenodo.18865829</a>
-</p>
-
-<p>
-Tu, X. (2026).<br>
-<strong>Responsibility Drift in AI-Mediated Systems</strong><br>
-Zenodo<br>
-<a href="https://doi.org/10.5281/zenodo.18899779" target="_blank">https://doi.org/10.5281/zenodo.18899779</a>
-</p>
-
-<h2>Canonical Research Repository</h2>
-
-<p>
-<a href="https://github.com/xufentu-creator/judgment-as-structural-constraint" target="_blank">
-Judgment as Structural Constraint
-</a>
-</p>
-
-<h2>Related Research Repositories</h2>
-
-<ul>
-  <li><a href="https://github.com/xufentu-creator/human-judgment-irreducible-interface" target="_blank">Human Judgment as an Irreducible Interface</a></li>
-  <li><a href="https://github.com/xufentu-creator/responsibility-drift-ai-mediated-systems" target="_blank">Responsibility Drift in AI-Mediated Systems</a></li>
-  <li><a href="https://github.com/xufentu-creator/human-responsibility-node" target="_blank">Human Responsibility Node</a></li>
-</ul>
-
-<h2>Research System</h2>
-
-<p>
-In addition to individual papers, the research is organized through a structured archival system that maintains conceptual continuity and version integrity.
-</p>
-
-<p>The system integrates:</p>
-
-<ul>
-  <li>Research papers and conceptual models</li>
-  <li>Public repositories documenting structural frameworks</li>
-  <li>Long-term research archives and version records</li>
-</ul>
-
-<p>
-The architecture separates identity, protocol, and archive layers in order to preserve conceptual clarity.
-</p>
-
-<p>
-Parts of the archival structure are maintained through a layered system separating identity, protocol, and archive functions, in order to preserve provenance clarity across distributed records.
-</p>
-
-<h2>Background</h2>
-
-<p>
-Before focusing on interdisciplinary research, Tu spent more than a decade working across technology development, engineering projects, and entrepreneurship.
-</p>
-
-<p>Her experience includes:</p>
-
-<ul>
-  <li>smart hardware and fingerprint lock development</li>
-  <li>engineering and product design projects</li>
-  <li>media and branding initiatives</li>
-  <li>hyperbaric oxygen-related experimentation and non-clinical wellbeing research</li>
-</ul>
-
-<p>
-These real-world experiences exposed her to complex interactions between technology systems, human behavior, and decision environments.
-</p>
-
-<p>
-Her interdisciplinary exploration also included studies related to cognition and behavioral frameworks, including non-clinical study of hypnosis methodologies in the United States for research understanding.
-</p>
-
-<h2>Professional Profiles</h2>
-
-<p>
-Medium<br>
-<a href="https://medium.com/@tuxuten" target="_blank">https://medium.com/@tuxuten</a>
-</p>
-
-<p>
-LinkedIn<br>
-<a href="https://www.linkedin.com/in/xufentu" target="_blank">https://www.linkedin.com/in/xufentu</a>
-</p>
-
-<h2>Contact</h2>
-
-<p>Email: <a href="mailto:xufentu@gmail.com">xufentu@gmail.com</a></p>
-
-<p>
-Contact is provided for research-related communication only.
-</p>
-
-<h2>Archive & Verification</h2>
-
-<p>
-Research materials are archived through a combination of open repositories and persistent identifiers.
-</p>
-
-<p>
-<strong>Canonical Research Repository</strong><br>
-<a href="https://github.com/xufentu-creator/judgment-as-structural-constraint" target="_blank">
-https://github.com/xufentu-creator/judgment-as-structural-constraint
-</a>
-</p>
-
-<p>
-<strong>DOI Archive</strong><br>
-<a href="https://doi.org/10.5281/zenodo.18571480" target="_blank">
-https://doi.org/10.5281/zenodo.18571480
-</a>
-</p>
-
-<p>
-<strong>ENS Identity Record</strong><br>
-<a href="https://app.ens.domains/xufentu.eth" target="_blank">
-xufentu.eth
-</a>
-</p>
-
-<p>
-<strong>Primary Frequency Identifier</strong><br>
-TUX-133.144~
-</p>
-
-<h2>Keywords</h2>
-
-<p>
-Complex Systems<br>
-AI Governance<br>
-Decision Architecture<br>
-Enterprise Transformation<br>
-Human Judgment
-</p>
-
-<h2>Author</h2>
-
-<p>
-Xufen Tu<br>
-Independent Interdisciplinary Researcher
-</p>
-
-<p>
-Research Focus<br>
-Complex Systems · AI Governance · Decision Architecture · Enterprise Transformation · Human Judgment
-</p>
-
-<h2>Notice</h2>
-
-<p>
-This website presents personal research, publications, and archival materials for informational and scholarly reference only.
-</p>
-
-<p>
-Nothing on this website constitutes medical, legal, financial, psychological, therapeutic, or other professional advice, diagnosis, treatment, or service offering.
-</p>
-
-<p>
-References to hyperbaric oxygen-related experimentation, non-clinical wellbeing research, or hypnosis-related study are included solely as part of the author’s interdisciplinary research background and should not be interpreted as clinical claims, treatment recommendations, or professional services.
-</p>
-
-<h2>Closing Perspective</h2>
-
-<p>
-This research explores how human judgment can remain structurally meaningful within increasingly automated technological environments.
-</p>
-
-<p>
-As systems grow in complexity and scale, maintaining identifiable responsibility, decision clarity, and governance stability will become critical challenges for future societies.
-</p>
-
-<p>
-The work represents an ongoing interdisciplinary effort to understand the evolving relationship between human decision-making and technological systems.
-</p>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-image">
+          <img src="xufen-tu-profile.png" alt="Portrait of Xufen Tu">
+        </div>
+
+        <div class="hero-content">
+          <div class="eyebrow">Official Research Homepage</div>
+
+          <h1>Xufen Tu</h1>
+
+          <p class="subtitle">
+            Independent Interdisciplinary Researcher
+          </p>
+
+          <p class="intro">
+            Research focused on Complex Systems, AI Governance, Decision Architecture, Human Judgment, and Enterprise Transformation. This website serves as the official public entry point to selected research, publications, and structured references.
+          </p>
+
+          <ul class="keywords">
+            <li>Complex Systems</li>
+            <li>AI Governance</li>
+            <li>Decision Architecture</li>
+            <li>Enterprise Transformation</li>
+            <li>Human Judgment</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/xufentu-creator/judgment-as-structural-constraint" target="_blank">Canonical Research Repository</a>
+            <a class="btn btn-secondary" href="https://doi.org/10.5281/zenodo.18571480" target="_blank">Primary DOI Archive</a>
+            <a class="btn btn-secondary" href="person.html">Author Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Research Direction</h2>
+        <p class="section-intro">
+          The current research examines how human judgment functions as a structural constraint in increasingly automated and AI-mediated environments, with particular attention to responsibility, governance stability, and decision clarity.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h2>Complex Systems</h2>
+            <p>
+              Structural stability, coordination, and constraint mechanisms in high-complexity environments.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>AI Governance</h2>
+            <p>
+              Governance boundaries, accountability logic, and responsibility distribution in AI-mediated systems.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Decision Architecture</h2>
+            <p>
+              Design of decision structures that preserve clarity, traceability, and meaningful human oversight.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Selected Publications</h2>
+        <p class="section-intro">
+          Selected public works and DOI-anchored research releases.
+        </p>
+
+        <div class="publication-list">
+          <div class="publication-item">
+            <strong>Judgment Before Momentum (v1.0.2)</strong>
+            <span>Zenodo · 2026</span>
+            <a href="https://doi.org/10.5281/zenodo.18571480" target="_blank">View DOI Record</a>
+          </div>
+
+          <div class="publication-item">
+            <strong>Human Judgment as an Irreducible Interface in High-Complexity Systems (v1.0)</strong>
+            <span>Zenodo · 2026</span>
+            <a href="https://doi.org/10.5281/zenodo.18573944" target="_blank">View DOI Record</a>
+          </div>
+
+          <div class="publication-item">
+            <strong>Human Responsibility Node in High-Replication Systems (v1.0)</strong>
+            <span>Zenodo · 2026</span>
+            <a href="https://doi.org/10.5281/zenodo.18865829" target="_blank">View DOI Record</a>
+          </div>
+
+          <div class="publication-item">
+            <strong>Responsibility Drift in AI-Mediated Systems</strong>
+            <span>Zenodo · 2026</span>
+            <a href="https://doi.org/10.5281/zenodo.18899779" target="_blank">View DOI Record</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="card">
+            <h2>Public Research Entry Points</h2>
+            <p>
+              <strong>Canonical Research Repository</strong><br>
+              <a href="https://github.com/xufentu-creator/judgment-as-structural-constraint" target="_blank">
+                github.com/xufentu-creator/judgment-as-structural-constraint
+              </a>
+            </p>
+            <br>
+            <p>
+              <strong>ORCID</strong><br>
+              <a href="https://orcid.org/0009-0007-5265-964X" target="_blank">
+                orcid.org/0009-0007-5265-964X
+              </a>
+            </p>
+            <br>
+            <p>
+              <strong>Google Scholar</strong><br>
+              <a href="https://scholar.google.com/citations?user=NseOI0QAAAAJ" target="_blank">
+                scholar.google.com/citations?user=NseOI0QAAAAJ
+              </a>
+            </p>
+          </div>
+
+          <div class="card contact-block">
+            <h2>Contact</h2>
+            <p>
+              Research-related communication only.
+            </p>
+            <p>
+              <strong>Email</strong><br>
+              <a href="mailto:xufentu@gmail.com">xufentu@gmail.com</a>
+            </p>
+            <p>
+              <strong>LinkedIn</strong><br>
+              <a href="https://www.linkedin.com/in/xufentu" target="_blank">linkedin.com/in/xufentu</a>
+            </p>
+            <p>
+              <strong>Medium</strong><br>
+              <a href="https://medium.com/@tuxuten" target="_blank">medium.com/@tuxuten</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-card">
+        This website presents personal research, publications, and archival references for informational and scholarly purposes only. Nothing on this website constitutes legal, medical, financial, psychological, therapeutic, or other professional advice.
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
